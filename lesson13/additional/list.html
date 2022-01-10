@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"
+          content="ie=edge">
+    <style>
+        button{
+            margin-bottom: 15px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+
+<a href="./index.html">
+    <h1>Back</h1>
+</a>
+<button id="deleteAll">Delete all</button>
+<div class="container"></div>
+
+<script>
+    let container = document.getElementsByClassName('container')[0];
+    let array = JSON.parse(localStorage.getItem('favorites'));
+    for (const element of array) {
+            let div = document.createElement('div');
+            let img = document.createElement('img');
+            let btnRemove = document.createElement('button');
+
+            btnRemove.innerText = 'Remove';
+            img.src = element.picture;
+            div.innerText = `${element.name}\n ${element.quantity}\n ${element.price}\n`;
+
+            div.append(img,btnRemove);
+            container.appendChild(div);
+
+            btnRemove.onclick = () => {
+                let index = array.indexOf(element);
+                array.splice(index,1);
+                localStorage.setItem('favorites', JSON.stringify(array));
+                div.remove();
+        }
+    }
+
+let btnDelete = document.getElementById('deleteAll');
+    btnDelete.onclick = () => {
+       location.reload();
+       localStorage.removeItem('favorites');
+    }
+
+</script>
+</body>
+</html>

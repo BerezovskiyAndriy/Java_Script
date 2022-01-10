@@ -1,0 +1,110 @@
+@import "_normalize.css";
+@import "_global.css";
+/* --------------------------- */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: cursive;
+    height: 100%;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    background: url("../img/background_page3.jpg") 0 0 / cover no-repeat;
+}
+.container{
+    height: 520px;
+    width: 500px;
+    background-color: white;
+    margin: 0 auto;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+#box{
+    height: fit-content;
+    padding: 35px 15px 65px;
+}
+.container p{
+    font-family: emoji;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 5px;
+    margin-bottom: 25px;
+}
+.wrap__btn{
+    width: 90%;
+    margin: 15px auto;
+}
+#btn{
+    font-family: emoji;
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+    transition: 0.4s;
+    position: relative;
+    padding: 4px 32px;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 6px;
+    color: #000;
+    font-size: 28px;
+    border: 4px outset #a6a1a1;
+    border-radius: 10px;
+}
+#btn:hover {
+    transition: .3s ease-in;
+    transform: scale(0.97);
+    box-shadow: 23px 0 35px 20px rgba(185, 194, 201, 0.4);
+}
+#block {
+    bottom: -1000px;
+    position: absolute;
+    height: 96%;
+    margin: 22px;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 10px;
+    justify-content: space-around;
+    border: 1px solid;
+    z-index: 10;
+    background: url("../img/background_block.jpg") 0 0 / cover no-repeat;
+    transition: .5s ease-in-out;
+}
+.commentInfo{
+    width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px 0;
+    background-color: #fff;
+    border: 2px solid;
+    border-radius: 10px;
+}
+.commentInfo:last-child{
+    width: 100%;
+}
+#close{
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 10px;
+    border: 2px solid #000;
+    padding: 6px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+#close:hover{
+    background-color: #000;
+    color: #fff;
+}

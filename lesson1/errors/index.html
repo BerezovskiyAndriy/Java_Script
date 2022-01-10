@@ -1,0 +1,53 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+</head>
+<body>
+Ваше завдання, зробити так, щоб файл відкривався без помилок .
+
+<!--<script>-->
+<!--    // Ваше завдання, зробити так, щоб файл відкривався без помилок .-->
+<!--    let a = 100;-->
+<!--    let b = 500;-->
+<!--    let c = "hello";-->
+<!--    let d = "okten";-->
+<!--    const x = 'constant value';-->
+<!--    -->
+<!--    {-->
+<!--        console.log(a);-->
+<!--        x = 'new value';  // константу ми не можемо змінити, тобто х не мож змінити оскільки воно задане через const-->
+<!--    }-->
+<!--    let b = 'new value'; // оскільки у нас уже є змінна b, то для перепреділення нам не потрібно вже перед змінною-->
+<!--                        //  вказувати let-->
+<!--    let result = 100 + y; // переминної y не існує оскільки вона нігде не задекларована і непроініціалізована-->
+<!--    console(result);      // має бути console.log-->
+<!--    -->
+<!--</script>-->
+
+<!--Рішення-->
+<script>
+    let a = 100;
+    let b = 500;
+    let c = "hello";
+    let d = "okten";
+    let x = 'constant value';
+    let y = 45;
+
+    {
+        console.log(a);
+        x = 'new value';  // константу x щоб змінити декларуємо її через let
+    }
+    b = 'new value'; // удаляємо не потрібну приставку let
+
+    let result = 100 + y; // перемінну у удяляємо або щоб відбулася така дія її декларуємо
+    console.log(result);      // додаємо log до console для правильного синтаксису виводу в консоль
+
+</script>
+</body>
+</html>

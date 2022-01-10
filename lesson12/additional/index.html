@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"
+          content="ie=edge">
+    <style>
+        .wrap{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 10px;
+        }
+        .user{
+            width: 270px;
+            padding: 10px;
+            margin: 10px;
+            background-color: #17141d;
+            color: #81caabe8;
+            border-radius: 10px;
+            border: 3px solid #fff;
+            box-shadow: -1rem 0 3rem #000;
+            position: relative;
+        }
+        .page1, .page2{
+            margin: 10px;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            align-items: center;
+            justify-content: center;
+            height: 40px;
+            display: flex;
+            gap: 10px;
+        }
+        .btn1, .btn2, .btn3, .btn4{
+            width: 32px;
+            border-radius: 50%;
+            background-color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .btn3, .btn4{
+            width: 20px;
+            position: absolute;
+            top: 5px;
+            right: 6px;
+        }
+        .btn1:hover, .btn2:hover, .btn3:hover, .btn4:hover{
+            transform: scale(1.2);
+            transition: all ease .4s;
+            background-color: #81caabe8;
+        }
+        .postDiv, .commentDiv{
+            display: none;
+            width: inherit;
+            height: 94%;
+            position: absolute;
+            left: -370px;
+            top: -10px;
+            padding: 10px;
+            margin: 10px;
+            background-color: #17141d;
+            color: #81caabe8;
+            border-radius: 10px;
+            box-shadow: -1rem 0 3rem #000;
+            border: 3px solid #fff;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+
+
+<script src="js/main.js"></script>
+</body>
+</html>

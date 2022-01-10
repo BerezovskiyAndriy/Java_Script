@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .container{
+            margin-bottom: 15px;
+        }
+    </style>
+    <title>Title</title>
+</head>
+<body>
+
+<div class="container"></div>
+<a href="./index.html">Home</a>
+
+
+<script>
+
+    let container = document.getElementsByClassName('container')[0];
+    let key = localStorage.getItem('favorites');
+    let arrKey = JSON.parse(key);
+    for (const element of arrKey) {
+        let div = document.createElement('div');
+        div.innerText = `${element.name} ${element.age} ${element.status}`;
+        container.appendChild(div);
+    }
+
+</script>
+</body>
+</html>
